@@ -37,12 +37,15 @@ pipeline {
   stages {
     stage('vars') {
       steps {
-        def abc = "hello"
-        def xyz = 10
+        script {
+            def abc = "hello"
+            def xyz = 10
 
-        print abc
-        print abc is "${abc}"
-        print xyz is "${xyz}"
+            print abc
+            print "abc is ${abc}"
+            print "xyz is ${xyz}"
+
+        }
       }
     }
 
