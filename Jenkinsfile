@@ -29,6 +29,24 @@
 //
 // }
 
-@Library('roboshop') _
+// @Library('roboshop') _
+//
+// test()
+pipeline {
+  agent any
+  stages {
+    stage('vars') {
+      steps {
+        def abc = "hello"
+        def xyz = 10
 
-test()
+        print abc
+        print abc is ${abc}
+        print xyz is ${xyz}
+      }
+    }
+
+  }
+}
+
+
