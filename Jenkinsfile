@@ -38,8 +38,8 @@ pipeline {
     stage('vars') {
       steps {
         script {
-            def abc = "hello"
-            def xyz = 10
+             abc = "hello"
+             xyz = 10
 
             print abc
             print "abc is ${abc}"
