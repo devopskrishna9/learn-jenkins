@@ -41,8 +41,8 @@ pipeline {
         def xyz = 10
 
         print abc
-        print abc is ${abc}
-        print xyz is ${xyz}
+        print abc is "${abc}"
+        print xyz is "${xyz}"
       }
     }
 
